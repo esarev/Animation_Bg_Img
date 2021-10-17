@@ -127,7 +127,7 @@
 
 .img-box:hover .content {
   transform: translateY(0);
-  transition-delay: 1s;
+  transition-delay: .7s;
 }
 
 .content h2 {
@@ -135,5 +135,50 @@
   text-transform: uppercase;
   font-size: 26px;
   color: #4cdde5;
+}
+
+
+
+/* Адаптив */
+
+@media only screen and (max-width: 1200px) {
+  .container-images {
+    min-width: 95%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container-images {
+    height: 250px;
+  }
+  .bor-lef-right::before {
+    left: 5px;
+  }
+  .bor-lef-right::after {
+    right: 5px;
+  }
+  .bor-top-bot::before {
+    top: 5px;
+  }
+  .bor-top-bot::after {
+    bottom: 5px;
+  }
+
+  .img-box {
+    background-size: 450px 300px;
+  }
+  .img-box:hover {
+    background-size: 525px 350px;
+  }
+  .content {
+    width: 93%;
+    padding: 10px;
+  }
+  .content h2 {
+    font-size: 16px;
+  }
+  .content p {
+    font-size: 12px;
+  }
 }
 
