@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-images {
+  min-width: 1200px;
+  height: 500px;
+  display: flex;
+  border: 1px solid #d6d6d6;
+  padding: 20px;
+  
+}
+
+.img-box {
+  flex-grow: 1;
+  background-size: 750px 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 1s;
+  filter: grayscale(1);
+}
