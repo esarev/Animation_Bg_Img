@@ -26,7 +26,7 @@
 
 .img-box {
   flex-grow: 1;
-  background-size: 750px 500px;
+  background-size: 700px 450px;
   background-position: center;
   background-repeat: no-repeat;
   transition: 1s;
@@ -37,7 +37,7 @@
 }
 
 .img-box:hover {
-  background-size: 900px 600px;
+  background-size: 850px 550px;
   flex-grow: 5;
   filter: grayscale(0);
   opacity: 1;
