@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .wrapper {
@@ -11,6 +14,7 @@
   align-items: center;
 }
 
+/* Картинки */
 .container-images {
   min-width: 1200px;
   height: 500px;
@@ -29,6 +33,7 @@
   filter: grayscale(1);
   opacity: .8;
   position: relative;
+  overflow: hidden;
 }
 
 .img-box:hover {
@@ -100,3 +105,35 @@
 .img-box:hover .bor-top-bot::after {
   transform: translateX(100%);
 }
+
+
+/* Контент */
+
+.content {
+  color: #fff;
+  background-color: #000;
+  opacity: .7;
+  font-size: 14px;
+  text-align: justify;
+  position: absolute;
+  width: 70%;
+  bottom: 10px;
+  right: 10px;
+  padding: 15px;
+  transform: translateY(120%);
+  transition: .5s;
+  border-radius: 3px;
+}
+
+.img-box:hover .content {
+  transform: translateY(0);
+  transition-delay: 1s;
+}
+
+.content h2 {
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #4cdde5;
+}
+
