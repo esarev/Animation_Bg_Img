@@ -49,7 +49,7 @@
 .bor-top-bot::after {
   content: '';
   position: absolute;
-  background-color: #e2e2e2;
+  background-color: #4cdde5;
   opacity: .3;
   transition: 1s;
 }
